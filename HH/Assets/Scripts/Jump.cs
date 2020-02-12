@@ -12,7 +12,6 @@ public class Jump : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        
         moving = false;
         dir = new Vector3(-1.51F, -3.22F, 0);
     }
@@ -21,11 +20,10 @@ public class Jump : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(moving);
 
         if (moving == true)
         {
-            this.transform.position = Vector3.Lerp(this.transform.position, dir, 0.9F);
+            this.transform.position = Vector3.Lerp(this.transform.position, dir, 1F);
             moving = false;
         }
         
@@ -41,7 +39,7 @@ public class Jump : MonoBehaviour
                 
                 moving = true;
                 dir = hit.collider.gameObject.transform.position;
-                dir.y += 1;
+                dir.y += 0.5F;
                 
             }
         }
@@ -67,7 +65,7 @@ public class Jump : MonoBehaviour
                    
                     moving = true;
                     dir = hit.collider.gameObject.transform.position;
-                    dir.y += 1;
+                    dir.y += 0.5F;
                     
                 }
             } 

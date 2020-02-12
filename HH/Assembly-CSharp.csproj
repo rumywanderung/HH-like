@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Clickable.cs" />
     <Compile Include="Assets\Scripts\Jump.cs" />
+    <Compile Include="Assets\Scripts\SequenceManager.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/SalesFromscratchAgen/Documents/Roumi/GitHub/HH-like/HH/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

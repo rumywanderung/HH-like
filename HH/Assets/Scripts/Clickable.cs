@@ -20,12 +20,12 @@ public class Clickable : MonoBehaviour
         }
     }
 
-    //private void OnTriggerExit(Collider collision)
-    //{
-    //    if (collision.gameObject.tag == "clickable")
-    //    {
-    //        collision.gameObject.tag = "tile";
-    //    }
-    //}
-    
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.tag == "clickable")
+        {
+            collision.gameObject.tag = "tile";
+        }
+    }
+
 }
